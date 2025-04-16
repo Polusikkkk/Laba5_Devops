@@ -3,9 +3,7 @@ from fastapi.testclient import TestClient
 from src.main import app
 
 client = TestClient(app)
-BASE_URL = "/api/v1/user"  # Общий endpoint для всех тестов
-
-# Тестовые данные
+BASE_URL = "/api/v1/user"
 users = [
     {
         'id': 1,
